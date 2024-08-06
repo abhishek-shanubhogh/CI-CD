@@ -3,7 +3,7 @@ name: "Second yml"
 on: 
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   job1:
