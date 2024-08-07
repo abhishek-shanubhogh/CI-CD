@@ -1,4 +1,4 @@
-name: "Python file checking and testing"
+name: "Python project"
 on: push
 
 jobs:
