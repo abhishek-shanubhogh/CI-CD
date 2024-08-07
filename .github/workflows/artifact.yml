@@ -1,0 +1,24 @@
+name: Atrifact File Upload Download
+env:
+  FILE_NAME: 'FILE_NAME_Added'
+on: push
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Job to check out the code
+        uses: actions/checkout@v2
+      - name: Job to Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.FILE_NAME}}
+          path: .
+      
+        
+      
+    
+      
+    
+  
