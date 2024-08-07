@@ -1,0 +1,45 @@
+name: Variables 
+env:
+  GLOBAL_VARIABLE: 'THIS IS GOLBAL VARIABLE ABHISHEK'
+  GLOBAL_VARIABLE2: '2ND GOLBAL VARIABLE TWO'
+on:
+  push
+
+jobs:
+
+  ubuntu:
+    env:
+      UBUNTU_VARIABLE: "HELO BRO UBUNTU"
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: this is ubuntu mmachine
+        run: |
+          echo "$GLOBAL_VARIABLE"
+          echo "$GLOBAL_VARIABLE2"
+          echo "UBUNTU_VARIBLE"
+          echo "--------------------------------------------------------------------"
+          echo "${{env.GLOBAL_VARIABLE}}"
+          echo  "${{env.GLOBAL_VARIABLE2}}"
+          echo "${{env.UBUNTU_VARIABLE}}"
+
+
+  windows:
+    env: 
+      WINDOWS_VARIABLE: "THIS IS WINDOWS VARIABLE"
+
+    runs-on: windows-latest
+
+    steps:
+
+      - name: this is windows machine
+        run: |
+          echo "$Env:GLOBAL_VARIABLE"
+          echo "$Env:GLOBAL_VARIABLE2"
+          echo "$Env:WINDOWS_VARIABLE"
+          echo "==========================================================================="
+          echo "${{env.GLOBAL_VARIABLE}}"
+          echo "${{env.GLOBAL_VARIABLE2}}"
+          echo "${{env.WINDOWS_VARIABLE}}"
+
+  
