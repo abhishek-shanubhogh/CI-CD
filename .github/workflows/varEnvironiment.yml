@@ -34,7 +34,7 @@ jobs:
 
       - name: this is windows machine
         run: |
-          echo "$Env:GLOBAL_VARIABLE"
+          echo $Env:GLOBAL_VARIABLE
           echo "$Env:GLOBAL_VARIABLE2"
           echo "$Env:WINDOWS_VARIABLE"
           echo "==========================================================================="
