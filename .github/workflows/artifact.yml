@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Job to check out the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.2.2
       - name: Job to Upload Artifact
         uses: actions/upload-artifact@v2
         with:
