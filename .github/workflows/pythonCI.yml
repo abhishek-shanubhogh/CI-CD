@@ -2,7 +2,7 @@ name: Python CI to test the run
 on: push
 jobs:
   job1:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4.2.2
       - name: this is -------->      
