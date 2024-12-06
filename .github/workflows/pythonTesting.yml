@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Testing the repo
-      - uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4.2.2
       - run: python ./Python/first.py
   # build:
   #   needs: test
