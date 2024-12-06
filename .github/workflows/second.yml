@@ -10,15 +10,15 @@ jobs:
     name: this is first job
     runs-on: ubuntu-latest
     steps: 
-    - name: Step one
+    - name: Job 1 ---- Step 1
       uses: actions/checkout@v2
-    - name: step two
+    - name: Job 1 ---- Step 2 
       run: env | sort
   job2:
     name: this is second job
     runs-on: windows-latest
     steps:
-    - name: Step one
+    - name: Job 2 ---- Step 1
       uses: actions/checkout@v2
-    - name: step two
+    - name: Job 2 ---- Step 2
       run: "Get-ChildItem Env: | Sort-Object Name"
