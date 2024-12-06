@@ -8,13 +8,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Job to check out the code
+      - name: Job to check out the code -->
         uses: actions/checkout@v4.2.2
-      - name: Job to Upload Artifact
+      - name: Job to Upload Artifact -->
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{env.FILE_NAME}}
           path: .
+      - name : Download the Artifacts -->
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: 'directDownload'
+          path: .
+
+      
       
         
       
