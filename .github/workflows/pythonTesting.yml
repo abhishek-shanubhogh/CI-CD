@@ -19,7 +19,11 @@ jobs:
         with: 
           name: hello_world_package
           path: .
-
+          
+  downloadartifact:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: download the artifact
         uses: aochmann/actions-download-artifact@1.0.4
         with:
