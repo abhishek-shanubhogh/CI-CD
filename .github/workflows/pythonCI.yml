@@ -1,9 +1,9 @@
 name: Python CI to test the run
-on:push
+on: push
 jobs:
   job1:
     runs-on: linux-latest
     steps:
-    -name: this is -------->
-    uses: action/checkout@v4.2.2
-    run: echo "hello world"
+      - uses: action/checkout@v4.2.2
+      - name: this is -------->      
+        run: echo hello world
