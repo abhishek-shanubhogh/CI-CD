@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Building the Python file and creating the artifact
-        uses : actions/checkout@v2
+        uses : actions/checkout@v4.2.2
         
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4.4.3
         with: 
           name: hello_world_package
           path: ./Python
